@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Copy same from index.html except main-content div-->
+    <head>
+        <meta charset="utf-8">
+        <!--To tell browser that website is responsive so display content as it is-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap neccesity for latest version-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Bootstrap files-->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <!--Our stylesheet-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Required font codes from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>
+            Desi Bistro
+        </title>
+    </head>
+    <body>
+        <header>
+            <!--Navbar code from bootstrap-->
+            <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="data:image/jpeg;base64,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" alt="Bootstrap" width="90" height="70">
+                    Desi Bistro  
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div id="items" class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link disabled">
+                        We deliver
+                        <p>1800-0001-004</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!--heading-->
+        <div id="main-content" class="container">
+          <h2 id="menu_categories_title" class="text-center"> Menu Categories</h2>
+          <div class="text-center"> Customizations to preparation available at extra cost. </div>
+        <!--Bootstrap row with divs for all menu categories with each col size suitable to fit titles with spaces-->
+          <section class="row"> 
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="single_category.html">
+              <div class="category_tile">
+                <img width="200" height="200" src="https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg" alt="Lunch">
+                <span>Lunch</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        </div>
+        <footer class="panel-footer">
+          <div class="container">
+            <div class="row">
+              <section id="hours" class="col-sm-6">
+                Hours:<br>
+                Mon-Sat: 12pm-11pm<br>
+                Sunday: 12pm-1am<br>
+               </section>
+               <section id="review" class="col-sm-6">
+                <p>*The best food and staff. Must visit with family and friends for a great time!</p>
+                <p>*One of the best chinese outlets in town with authentic taste and diverse menu.</p>
+               </section>
+            </div>
+            <div class="text-center">&copy; Copyright Desi Bistro 2021</div>
+          </div>
+
+
+        </footer>
+    </body>
+</html>

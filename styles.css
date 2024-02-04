@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    color: white;
+    background-color: #61122f;
+    /*Font family specifications needed for required font from google fonts*/
+    font-family: 'Oxygen', sans-serif;
+}
+/* #header-nav{
+    background-color: #f6b319 !important;
+    border-radius: 0;
+    border: 0;
+    height: 70px;
+} */
+#items{
+    float: right;
+}
+#rest-img{
+    margin-top: 50px;
+    border: 5px solid black;
+}
+#tiles{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px; 
+    /* 100% width of container div */
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+#menu-tile{
+    background: url("https://media.istockphoto.com/id/483120255/photo/asian-oranage-chicken-with-green-onions.jpg?s=612x612&w=0&k=20&c=0T_g_J5OSnmCei1Slgr1128wzAhzceRvLjd94R3gkgs=");
+    /* position center helps not worry about changing 
+    size of elements for diff media queries as diivs shrink */
+    background-position: center;
+}
+#specials-tile{
+    background: url("https://st.depositphotos.com/1011643/1477/i/600/depositphotos_14773785-stock-photo-hot-chinese-food-with-steam.jpg");
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    width: 100%;
+    /* To get spans at bottom make position absolute and bottom and right 0*/
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .6;
+}
+.panel-footer{
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+#review p{
+    /* Changes the height between lines */
+    line-height: 1.5;
+    font-style: italic;
+}
+#review p:nth-child(2){
+    /* Margin for 2nd paragraph to seperate from first review */
+    margin-top: 20px;
+}
+/* Style for menu categories */
+.category_tile{
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    /* Margin left and right: auto centres something */
+    margin: 0 auto 15px;
+}
+.category_tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.6;
+}
+.category_tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+/*Element and next element to menu_categories_title of same parent (sibling) */
+#menu_categories_title + div{
+    margin-bottom: 50px;
+}
+/* Style for single_category page */
+.menu-categories-tile{
+    margin-bottom:25px;
+}
+.menu_item_tile .menu_item_price{
+    font-size: 1em;
+    text-align: right;
+}
+.menu_item_tile .menu_item_price span{
+    font-size: .5em;
+}
+.menu_item_photo{
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    padding: 0;
+    /* Max width so that if size changes, image cannot be more big */
+    max-width: 220px;
+}
+.menu_item_photo div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu_item_description{
+    padding-right: 30px;
+}
+.menu_item_title{
+    margin: 0 0 10px;
+}
+.menu_item_details{
+    font-size: .9em;
+    font-style: italic;
+}
+
+@media(min-width: 1200px){
+    #rest-img{
+        height:600px;
+        border: 5px solid black;
+        box-shadow: 0 0 50px #3F0C1F;
+    }
+}
+@media(max-width: 767px){
+    #rest-img{
+        margin-top: 10px;
+    }
+    .panel-footer section{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .menu_item_photo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu_item_tile .menu_item_price{
+        text-align: center;
+    }
+    .menu_item_description{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
